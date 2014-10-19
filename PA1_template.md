@@ -63,7 +63,10 @@ library( ggplot2 )
 ggplot( DATA_noNA , aes( date , steps ) ) + geom_bar( stat = "identity" , colour = "black" , fill = "black" , width = 0.5 ) + facet_grid(. ~ month , scales = "free" ) + labs( title = "Total Number of Steps Per Day" , x = "Date" , y = "Total Number of Steps" )
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+
+![plot of chunk figure1](figure1.png) 
+
+
 
 * Calculate and report the mean and median total number of steps taken per day
 
@@ -98,7 +101,9 @@ names( avgSteps )[2] <- "meanOfSteps"
 ggplot( avgSteps , aes( interval , meanOfSteps ) ) + geom_line( color = "black" , size = 0.5 ) + labs( title = "Time Series Plot of the 5-Minute Interval" , x = "5-Minute Intervals" , y = "Average Number of Steps Taken" )
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
+
+![plot of chunk figure2](figure2.png) 
+
 
 * Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -176,7 +181,9 @@ ggplot( DATA_new , aes( date , steps ) ) + geom_bar( stat = "identity" ,
                                              width = 0.5 ) + facet_grid(. ~ month, scales = "free" ) + labs( title = "Histogram of Total Number of Steps Taken Each Day (no Missing Data)" , x = "Date" , y = "Total Number of Steps" )
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10.png) 
+
+![plot of chunk figure3](figure3.png) 
+
 
 * Do these values differ from the estimates from the first part of the assignment? 
 * What is the impact of imputing missing data on the estimates of the total daily number of steps?
@@ -305,7 +312,8 @@ xyplot( Steps_average$MeanOfSteps ~ Steps_average$interval | Steps_average$weekd
        ylab = "Number of steps" )
 ```
 
-![plot of chunk figure1](figure1.png) 
+
+![plot of chunk figure4](figure4.png) 
 
 
 
