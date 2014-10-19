@@ -1,14 +1,14 @@
 # Reproducible Research: Peer Assessment 1
 ==========================================
-Created by JORDI ROSES on October 19, 2014
+
 
 
 ### Basic settings
 
 ```r
-echo = TRUE  # Always make code visible
+echo = TRUE 
 
-options( scipen = 1 )  # Turn off scientific notations for numbers
+options( scipen = 1 ) 
 ```
 
 
@@ -40,7 +40,6 @@ head( DATA_noNA )
 ## 3     0 2012-10-02       10    10
 ## 4     0 2012-10-02       15    10
 ## 5     0 2012-10-02       20    10
-## 6     0 2012-10-02       25    10
 ```
 
 ```r
@@ -64,7 +63,7 @@ ggplot( DATA_noNA , aes( date , steps ) ) + geom_bar( stat = "identity" , colour
 ```
 
 
-![plot of chunk figure1](figure1.png) 
+![plot of chunk figure1](figures/figure1.png) 
 
 
 
@@ -102,7 +101,7 @@ ggplot( avgSteps , aes( interval , meanOfSteps ) ) + geom_line( color = "black" 
 ```
 
 
-![plot of chunk figure2](figure2.png) 
+![plot of chunk figure2](figures/figure2.png) 
 
 
 * Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -160,7 +159,6 @@ head( DATA_new )
 ## 3 0.13208 2012-10-01       10    10
 ## 4 0.15094 2012-10-01       15    10
 ## 5 0.07547 2012-10-01       20    10
-## 6 2.09434 2012-10-01       25    10
 ```
 
 ```r
@@ -182,7 +180,7 @@ ggplot( DATA_new , aes( date , steps ) ) + geom_bar( stat = "identity" ,
 ```
 
 
-![plot of chunk figure3](figure3.png) 
+![plot of chunk figure3](figures/figure3.png) 
 
 
 * Do these values differ from the estimates from the first part of the assignment? 
@@ -258,7 +256,6 @@ head( DATA_new )
 ## 3 0.13208 2012-10-01       10    10
 ## 4 0.15094 2012-10-01       15    10
 ## 5 0.07547 2012-10-01       20    10
-## 6 2.09434 2012-10-01       25    10
 ```
 
 ```r
@@ -313,7 +310,7 @@ xyplot( Steps_average$MeanOfSteps ~ Steps_average$interval | Steps_average$weekd
 ```
 
 
-![plot of chunk figure4](figure4.png) 
+![plot of chunk figure4](figures/figure4.png) 
 
 
 

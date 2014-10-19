@@ -1,15 +1,15 @@
 Reproducible Research: Peer Assessment 1
 ==========================================
-Created by JORDI ROSES on October 19, 2014
+
 
 
 ### Basic settings
 
 ```{r}
 
-echo = TRUE  # Always make code visible
+echo = TRUE 
 
-options( scipen = 1 )  # Turn off scientific notations for numbers
+options( scipen = 1 ) 
 
 ```
 
